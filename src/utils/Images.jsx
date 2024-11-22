@@ -8,7 +8,12 @@ const imageNames = [
   "edit",
   "options",
   "pencil",
-  "search", 
+  "search",
+  "group",
+  "frame",
+  "ticket",
+  "airplane",
+  "percent"
 ];
 
 const IMAGES = imageNames.reduce((acc, name) => {

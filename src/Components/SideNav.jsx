@@ -70,17 +70,17 @@ const SideNav = ({ toggleBar, toggle }) => {
     <div
       className={` ${
         toggleBar
-          ? "fixed lg:static w-[80%] h-screen lg:min-h-screen z-10 lg:z-0 top-0  lg:block lg:w-[6%]"
+          ? "fixed lg:static w-[80%] h-screen lg:min-h-screen z-10 lg:z-0 top-0  lg:block lg:w-[12%]"
           : "hidden lg:block lg:w-[20%]"
-      }  bg-[#060531] min-h-screen max-w-full transition-all  duration-500  `}
+      }  bg-Navbar min-h-screen max-w-full transition-all  duration-500  `}
     >
       {/* min-h-[calc(100vh-0px)] max-h-[calc(100vh-0px)] */}
 
       <ul className="">
         <li className="relative">
           <div
-            onClick={toggle}
-            className=" flex items-start justify-start p-6"
+            // onClick={toggle}
+            className=" flex items-center justify-center p-6"
           >
            <img src={IMAGES.LOGO} alt="Logo" className="w-20" />
           </div>
@@ -96,9 +96,9 @@ const SideNav = ({ toggleBar, toggle }) => {
                   className={`flex items-center justify-center gap-4 py-[10px] px-6 cursor-pointer text-white  transition-all duration-1000`}
                 >
                   <p
-                    className={` ${toggleBar ? " lg:hidden" : "block"} ${
-                      isActive && "font-black text-lg bg-NavButtonBg px-16 py-4 rounded-lg text-textColor6 "
-                    } lg:text-[16px] md:text-[16px] text-lg font-semibold  text-center transition-all duration-700`}
+                    className={` ${toggleBar ? "" : "block"} ${
+                      isActive && `font-black text-lg bg-NavButtonBg ${toggleBar?"text-xs py-4 px-1 ":" px-10 py-4"}  rounded-lg text-textColor6 `
+                    } lg:text-[16px] md:text-[16px]  font-semibold  text-center transition-all duration-700`}
                   >
                     {items.title}
                   </p>

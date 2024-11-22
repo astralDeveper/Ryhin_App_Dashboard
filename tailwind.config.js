@@ -9,7 +9,7 @@ export default {
       colors: {
         Navbar: '#221F76',
         TabColor:'#52EAFF',
-        BackgroundColor:'#C4B4B4',
+        BackgroundColor:'#f7f8fa',
         textColor1: '#008000',
         textColor2: '#FF0000',
         textColor3: '#A4A29D',

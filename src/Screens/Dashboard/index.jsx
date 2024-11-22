@@ -1,10 +1,12 @@
-import React from 'react'
 import Container from '../../Components/Container'
+import Ratingcards from './Components/Ratingcards'
 
 const  Dashboard = () => {
   return (
-    <Container name="Dashboard">
-        <div><p>hghadghgash</p></div>
+    <Container mainStyle={"h-full"} name="Dashboard" >
+        <div className={`max-w-screen-2xl mx-auto p-6`}  >
+          <Ratingcards/>
+        </div>
     </Container>
   )
 }

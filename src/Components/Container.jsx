@@ -77,7 +77,7 @@ const Container = ({ mainStyle, children, name }) => {
           </div>
         </header>
 
-        <div className={`${mainStyle}`}>{children}</div>
+        <div className={`${mainStyle} bg-BackgroundColor `}>{children}</div>
       </div>
     </div>
   );

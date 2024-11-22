@@ -1,12 +1,12 @@
-import React from 'react'
-import Container from '../../Components/Container'
+import Container from "../../Components/Container"
 
-const Admins = () => {
+
+const Admin = () => {
   return (
-    <Container name={Admins}>
-        <div>dssdsdsdsds</div>
+    <Container name="Admin">
+        <div><p>hghadghgash</p></div>
     </Container>
   )
 }
 
-export default Admins
+export default Admin
